@@ -1,0 +1,75 @@
+:root {
+  /* Brand Red Palette */
+  --primary-color: #d32f2f;
+  --primary-hover: #b71c1c;
+  --primary-light: #ffebee;
+  --primary-gradient: linear-gradient(135deg, #e53935 0%, #c62828 100%);
+  --accent-color: #ff5252;
+
+  /* Neutral Light Colors */
+  --bg-color: #f8f9fa;
+  --card-bg: #ffffff;
+  --header-bg: #d32f2f;
+  --header-text: #ffffff;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+  --border-color: #f0f0f0;
+  --divider-color: #e5e7eb;
+
+  /* Message Bubbles */
+  --bubble-self-bg: #e53935;
+  --bubble-self-text: #ffffff;
+  --bubble-other-bg: #f3f4f6;
+  --bubble-other-text: #1f2937;
+
+  /* UI Status Colors */
+  --online-color: #10b981;
+  --offline-color: #9ca3af;
+  --missed-color: #ef4444;
+
+  /* Layout & Sizing */
+  --app-max-width: 480px;
+  --header-height: 56px;
+  --bottom-nav-height: 64px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 25px rgba(211, 47, 47, 0.15);
+
+  /* Transitions */
+  --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Theme Overrides */
+[data-theme='dark'] {
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --header-bg: #1f1f1f;
+  --header-text: #ffffff;
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+  --border-color: #2e2e2e;
+  --divider-color: #2a2a2a;
+
+  --bubble-self-bg: #c62828;
+  --bubble-self-text: #ffffff;
+  --bubble-other-bg: #2d2d2d;
+  --bubble-other-text: #e5e7eb;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Light Theme Overrides (White Header variant) */
+[data-theme='light'] {
+  --header-bg: #ffffff;
+  --header-text: #1f2937;
+}

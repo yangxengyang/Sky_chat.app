@@ -1,0 +1,47 @@
+.mobile-app-wrapper {
+  width: 100%;
+  max-width: var(--app-max-width);
+  height: 100vh;
+  max-height: 920px;
+  background-color: var(--bg-color);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  border-radius: 0;
+  transition: var(--transition-smooth);
+}
+
+@media (min-width: 640px) {
+  .mobile-app-wrapper {
+    height: 92vh;
+    border-radius: 36px;
+    border: 8px solid #2a2a32;
+  }
+}
+
+.status-bar-sim {
+  height: 28px;
+  background-color: var(--header-bg);
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  z-index: 50;
+}
+
+[data-theme='light'] .status-bar-sim {
+  color: #1f2937;
+}
+
+.app-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
